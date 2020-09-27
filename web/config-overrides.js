@@ -1,6 +1,13 @@
 const path = require('path');
 const fs = require('fs')
+const moduleAlias = require("module-alias");
 const { override, addBabelPlugins, babelInclude } = require('customize-cra');
+
+(() => {
+  moduleAlias.addAliases({
+    "react-native": require.resolve("react-native-web"),
+  })
+})();
 
 // https://github.com/oblador/react-native-vector-icons/issues/1104#issuecomment-677251530
 (() => {

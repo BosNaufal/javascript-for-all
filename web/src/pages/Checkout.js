@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react'
-import { View, ScrollView } from 'react-native-web'
+import { View, ScrollView } from 'react-native'
 import { Text, Button, Header } from 'react-native-elements';
 import Item from './components/Item';
 

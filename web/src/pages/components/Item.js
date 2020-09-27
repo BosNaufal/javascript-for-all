@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, ActivityIndicator } from 'react-native-web'
+import { View, ActivityIndicator } from 'react-native'
 import { Text, Image } from 'react-native-elements';
 import ActionButton from './ActionButton'
 

@@ -13,24 +13,24 @@ const ActionButton = ({
         raised
         name='clear'
         color='#ff0e00'
-        size={12}
-        containerStyle={{ borderWidth: 1, borderColor: "#ff0e00", marginHorizontal: 3 }}
+        size={13}
+        containerStyle={{ marginHorizontal: 3 }}
         onPress={onDelete} 
       />
       <Icon
         raised
         name='remove'
         color='#000'
-        size={12}
-        containerStyle={{ borderWidth: 1, borderColor: "#000", marginHorizontal: 3 }}
+        size={13}
+        containerStyle={{ marginHorizontal: 3 }}
         onPress={onDecreaseQty} 
       />
       <Icon
         raised
         name='add'
         color='#000'
-        size={12}
-        containerStyle={{ borderWidth: 1, borderColor: "#000", marginHorizontal: 3 }}
+        size={13}
+        containerStyle={{ marginHorizontal: 3 }}
         onPress={onAddQty} 
       />
     </View>

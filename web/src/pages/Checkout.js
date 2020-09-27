@@ -78,16 +78,16 @@ const CheckoutPage = () => {
   }
 
   return (
-    <View style={{ height: "100%" }}>
+    <View style={{ height: "100%", backgroundColor: "white" }}>
       <Header
         backgroundColor="#fff"
         containerStyle={{ borderBottom: 0 }}
         leftComponent={{ icon: 'arrow-back', color: '#000' }}
       />
 
-      <View style={{ borderBottomWidth: 1,  borderBottomColor: "#000", paddingVertical: 15  }}>
+      <View style={{ borderBottomWidth: 1,  borderBottomColor: "#000", paddingVertical: 15, paddingTop: 5  }}>
         <Container>
-          <Text h2 style={{ fontWeight: 700 }}>Checkout</Text>
+          <Text h2 style={{ fontWeight: "700" }}>Checkout</Text>
           <Text style={{ color: "#676767" }}>{items.length} Items</Text>
         </Container>
       </View>
@@ -121,7 +121,7 @@ const CheckoutPage = () => {
             <Text style={{ color: "#000" }}>${tax.toFixed(2)}</Text>
           </View>
           <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 10 }}>
-            <Text style={{ color: "#000", fontWeight: 700 }}>Total</Text>
+            <Text style={{ color: "#000", fontWeight: "700" }}>Total</Text>
             <Text h4 style={{ color: "#000" }}>${(subtotal + tax).toFixed(2)}</Text>
           </View>
         </Container>
@@ -132,14 +132,15 @@ const CheckoutPage = () => {
           width: "80%",
           maxWidth: 350,
           marginHorizontal: "auto",
-          paddingBottom: 35,
+          paddingBottom: 25,
           paddingTop: 15,
+          alignSelf: "center"
         }}
       >
         <Button 
           title="Buy Now" 
           buttonStyle={{ backgroundColor: "#000", borderRadius: 35 }} 
-          titleStyle={{ fontWeight: 700 }}
+          titleStyle={{ fontWeight: "700" }}
         />
       </View>
     </View>

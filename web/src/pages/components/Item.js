@@ -19,13 +19,13 @@ const Item = ({
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <View style={{ flexDirection: "row" }}>
           <Image 
-            source={{ uri: image }}
+            source={image}
             style={{ width: 100, height: 100, marginRight: 15 }}
             PlaceholderContent={<ActivityIndicator />}
           />
           <View style={{ flexWrap: "wrap", maxWidth: 125 }}>
             <View>
-              <Text style={{ fontWeight: 700 }}>{name}</Text>
+              <Text style={{ fontWeight: "700" }}>{name}</Text>
               <Text>${price.toFixed(2)} x {qty}</Text>
             </View>
             <View>

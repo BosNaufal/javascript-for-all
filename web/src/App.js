@@ -21,7 +21,9 @@ function App() {
           width: 100%;
         }
       `}</style>
-      <CheckoutPage />
+      <div style={{ height: "100%", width: 385, margin: "0 auto", border: "1px solid #DDD" }}>
+        <CheckoutPage />
+      </div>
     </React.Fragment>
   );
 }

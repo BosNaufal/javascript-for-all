@@ -4,6 +4,7 @@ import { Text, Image } from 'react-native-elements';
 import ActionButton from './ActionButton'
 
 const Item = ({
+  index,
   image,
   name,
   price,
@@ -15,7 +16,7 @@ const Item = ({
   onDecreaseQty,
 }) => {
   return (
-    <View style={{ marginBottom: 25, paddingHorizontal: 15 }}>
+    <View testID={`item-${index + 1}`} style={{ marginBottom: 25, paddingHorizontal: 15 }}>
       <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
         <View style={{ flexDirection: "row" }}>
           <Image 
@@ -26,7 +27,10 @@ const Item = ({
           <View style={{ flexWrap: "wrap", maxWidth: 125 }}>
             <View>
               <Text style={{ fontWeight: "700" }}>{name}</Text>
-              <Text>${price.toFixed(2)} x {qty}</Text>
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <Text>${price.toFixed(2)} </Text>
+                <Text testID="qty">x {qty}</Text>
+              </View>
             </View>
             <View>
               <Text style={{ color: "#676767" }}>Size: {size}</Text>

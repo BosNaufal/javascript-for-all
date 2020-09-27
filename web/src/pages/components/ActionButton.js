@@ -10,6 +10,7 @@ const ActionButton = ({
   return (
     <View style={{ flexDirection: "row", justifyContent: "flex-end" }}>
       <Icon
+        testID="delete-button"
         raised
         name='clear'
         color='#ff0e00'
@@ -18,6 +19,7 @@ const ActionButton = ({
         onPress={onDelete} 
       />
       <Icon
+        testID="decrease-button"
         raised
         name='remove'
         color='#000'
@@ -26,6 +28,7 @@ const ActionButton = ({
         onPress={onDecreaseQty} 
       />
       <Icon
+        testID="add-button"
         raised
         name='add'
         color='#000'

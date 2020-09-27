@@ -88,7 +88,7 @@ const CheckoutPage = () => {
       <View style={{ borderBottomWidth: 1,  borderBottomColor: "#000", paddingVertical: 15, paddingTop: 5  }}>
         <Container>
           <Text h2 style={{ fontWeight: "700" }}>Checkout</Text>
-          <Text style={{ color: "#676767" }}>{items.length} Items</Text>
+          <Text testID="jumlah-barang" style={{ color: "#676767" }}>{items.length} Items</Text>
         </Container>
       </View>
 
@@ -96,6 +96,7 @@ const CheckoutPage = () => {
         {items.map((item, index) => (
           <Item 
             key={index}
+            index={index}
             image={item.image}
             name={item.name}
             price={item.price}

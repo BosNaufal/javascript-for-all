@@ -24,12 +24,15 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import CheckoutPage from './src/pages/Checkout'
+
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
+        <CheckoutPage />
+        {/* <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
@@ -66,7 +69,7 @@ const App = () => {
             </View>
             <LearnMoreLinks />
           </View>
-        </ScrollView>
+        </ScrollView> */}
       </SafeAreaView>
     </>
   );

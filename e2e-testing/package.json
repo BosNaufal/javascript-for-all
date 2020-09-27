@@ -1,0 +1,30 @@
+{
+  "name": "e2e-testing",
+  "version": "0.0.1",
+  "description": "e2e web app testing using javascript",
+  "main": "index.js",
+  "author": "Naufal Rabbani<bosnaufalemail@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "chromedriver": "^85.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/src/*.js"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "modulePaths": [
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ]
+  }
+}
